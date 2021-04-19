@@ -2,6 +2,7 @@ import pandas as pd
 
 df = pd.read_csv()
 
+# select related columns
 time_columns = df.columns[4:]
 
 for column in time_columns:
