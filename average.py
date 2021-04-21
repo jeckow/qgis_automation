@@ -1,6 +1,10 @@
+'''
+simple function for average null values contained in the dataset
+'''
+
 import pandas as pd
 
-df = pd.read_csv()
+df = pd.read_csv('file path here')
 
 # select related columns
 time_columns = df.columns[4:]
@@ -19,4 +23,4 @@ for column in time_columns:
         elif df[column][i] == 0 and 0 < i < len(df) - 1:
             df.at[i, column] = (df[column][i - 1] + df[column][i + 1]) / 2
 
-df.to_csv()
+df.to_csv('file path here')
